@@ -6,6 +6,7 @@ before_install:
 script:
   - docker run -e CI=True khurramhanif/docker-react npm run test
 
+# Following will be used by Travis to deploy changes to AWS
 deploy:
     provider: elasticbeanstalk
     region: "us-east-1"
