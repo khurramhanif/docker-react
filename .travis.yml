@@ -8,11 +8,11 @@ script:
 
 deploy:
     provider: elasticbeanstalk
-    region: "TODO"
-    app: "TODO"
-    env: "TODO"
-    bucket_name: "TODO"
-    bucket_path: "TODO"
+    region: "us-east-1"
+    app: "docker-react"
+    env: "DockerReact-env"
+    bucket_name: "elasticbeanstalk-us-east-1-627417904255"
+    bucket_path: "docker-react"
     on:
       branch: master
     access_key_id:
